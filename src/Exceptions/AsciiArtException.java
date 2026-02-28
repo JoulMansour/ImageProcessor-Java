@@ -3,7 +3,7 @@ package Exceptions;
 /**
  * Base class for all custom exceptions in the ASCII art application.
  */
-public class AsciiArtException extends RuntimeException {
+public class AsciiArtException extends Exception {
     /**
      * Constructor with message as a parameter.
      * @param message the message.
@@ -20,4 +20,5 @@ public class AsciiArtException extends RuntimeException {
     public AsciiArtException(String message, Throwable cause) {
         super(message, cause);
     }
+
 }
